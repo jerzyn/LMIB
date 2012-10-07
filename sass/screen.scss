@@ -1,0 +1,37 @@
+@import "base";
+
+body {
+	background: #4E70A6 url($path + '/images/LMIB_bg.jpg') repeat top center;
+	font: 16px/24px Arial, sans-serif;
+	color: #000;
+}
+
+.wrapper {
+	width: 1024px;
+	margin: 0 auto;
+}
+
+#top-main {
+	width: 100%;
+	background: #074A97;
+	height: 2em;
+	font-family: "MyriadPro", Arial, sans-serif;
+	ul {
+		@include horizontal-list;
+		float: right;
+		a {
+			color: #fff;
+			@include transition-property(all);
+			@include transition-duration(0.5s);
+			@include transition-timing-function(ease-in);
+			&:hover {
+				color: #ffe806;
+			}
+		}
+	}
+}
+
+#main {
+	position: relative;
+	background: url($path + '/images/LMIB_BANER.png') no-repeat;
+}

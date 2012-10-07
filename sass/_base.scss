@@ -1,0 +1,9 @@
+@import "compass";
+@import "compass/reset";
+@import "compass/layout/sticky-footer";
+
+$path: '..';
+
+@include sticky-footer(200px, "#wrap", "#wrap_footer", "#primary-foot");
+@include font-face("MyriadPro", font-files($path + "/myriadpro-boldcond.ttf", "myriadpro-boldcond.otf", "myriadpro-boldcond.eot", "myriadpro-boldcond.svg"));
+
