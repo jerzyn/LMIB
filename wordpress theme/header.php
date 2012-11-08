@@ -55,7 +55,7 @@
 			<div class="wrapper">
 				<section id="main">
 					<div id="logo">
-						<a href="#"><img src="<?php echo get_template_directory_uri(); ?>/images/LMIB_logo.png"></a>
+						<a href="/"><img src="<?php echo get_template_directory_uri(); ?>/images/LMIB_LOGO_01.png"></a>
 					</div>
 					<div id="counter"></div>
 					<form id="search">
@@ -65,7 +65,7 @@
 						</div>					
 					</form>
 					<div id="languages">
-						<a href="#"><img src="<?php echo get_template_directory_uri(); ?>/images/LMIB_languages_PORT.png" alt="Portuguese"/></a>
+						<a href="#"><img src="<?php echo get_template_directory_uri(); ?>/images/LMIB_languages_BR.png" alt="Portuguese"/></a>
 						<a href="#"><img src="<?php echo get_template_directory_uri(); ?>/images/LMIB_languages_SPAIN.png" alt="Espanol Castellano"/></a>
 						<a href="#"><img src="<?php echo get_template_directory_uri(); ?>/images/LMIB_languages_ENG.png" alt="English"/></a>
 					</div>

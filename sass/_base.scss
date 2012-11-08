@@ -9,12 +9,13 @@ $cities-menu: 12;
 $p35: 35px; 
 
 @include sticky-footer(225px, "#wrap", "#wrap_footer", "#primary-foot");
-@include font-face("MyriadPro", font-files("/myriadpro-boldcond.ttf", "myriadpro-boldcond.otf", "myriadpro-boldcond.eot", "myriadpro-boldcond.svg"));
+@include font-face("MyriadPro", font-files("myriadpro-boldcond.ttf", "myriadpro-boldcond.otf", "myriadpro-boldcond.eot", "myriadpro-boldcond.svg"));
 @include all-social-sprites;
 
 @mixin fullbar {
 	width: 100%;
-	background: #2061AD;
+	$experimental-support-for-svg: true;
+	@include background-image(linear-gradient(left, #044794, #3574c0, #044794));
 	font-family: "MyriadPro", Arial, sans-serif;
 
 }

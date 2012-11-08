@@ -1,0 +1,518 @@
+/******************************************************************
+Theme Name: Let's Meet in Brazil
+Description: This template is created for use in Let's meet in brazil site. It's based on the Bones theme.
+Author: Andrzej Jarzyna
+Author URI: 
+Version: 0.1
+Tags: flexble-width, translation-ready, microformats, rtl-language-support
+
+License: WTFPL
+License URI: http://sam.zoy.org/wtfpl/
+Are You Serious? Yes.
+
+
+******************************************************************/
+
+/* line 17, ../../../../../RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 58, social/*.png */
+.social-sprite, .social-face, .social-g, .social-twitter {
+  background: url('/images/social-s8de3f2d89a.png') no-repeat;
+}
+
+/* line 10, ../../../../../RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/layout/_sticky-footer.scss */
+html, body {
+  height: 100%;
+}
+
+/* line 12, ../../../../../RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/layout/_sticky-footer.scss */
+#wrap {
+  clear: both;
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  margin-bottom: -225px;
+}
+/* line 18, ../../../../../RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/layout/_sticky-footer.scss */
+#wrap #wrap_footer {
+  height: 225px;
+}
+
+/* line 20, ../../../../../RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/layout/_sticky-footer.scss */
+#primary-foot {
+  clear: both;
+  position: relative;
+  height: 225px;
+}
+
+@font-face {
+  font-family: "MyriadPro";
+  src: url(/myriadpro-boldcond.ttf) format('truetype'), url('/fonts/myriadpro-boldcond.otf') format('opentype'), url('/fonts/myriadpro-boldcond.eot') format('embedded-opentype'), url('/fonts/myriadpro-boldcond.svg') format('svg');
+}
+
+/* line 60, ../../../../../RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.social-face {
+  background-position: 0 -60px;
+}
+
+/* line 60, ../../../../../RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.social-g {
+  background-position: 0 0;
+}
+
+/* line 60, ../../../../../RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.social-twitter {
+  background-position: 0 -30px;
+}
+
+/* line 3, ../sass/screen.scss */
+body {
+  background-color: #C0D0E7;
+  background-image: url("../images/LMIB_BANER.png"), url("../images/LMIB_bg.jpg");
+  background-position: center top, center top;
+  background-repeat: no-repeat, repeat-x;
+  font: 16px/24px Arial, sans-serif;
+  color: #000;
+}
+
+/* line 12, ../sass/screen.scss */
+p {
+  font-size: 1em;
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+}
+
+/* line 18, ../sass/screen.scss */
+h1 {
+  font-size: 1.5em;
+  line-height: 1em;
+  margin-top: 0;
+  margin-bottom: 1em;
+}
+
+/* line 25, ../sass/screen.scss */
+h2 {
+  font-size: 1.1667em;
+  line-height: 1.286em;
+  margin-top: 1.286em;
+  margin-bottom: 1.286em;
+}
+
+/* line 32, ../sass/screen.scss */
+a {
+  text-decoration: none;
+}
+
+/* line 36, ../sass/screen.scss */
+.wrapper {
+  width: 972px;
+  margin: 0 auto;
+}
+
+/* line 41, ../sass/screen.scss */
+#top-main {
+  width: 100%;
+  background: #2061AD;
+  font-family: "MyriadPro", Arial, sans-serif;
+  height: 2em;
+  font-size: 1.25em;
+  line-height: 2em;
+  color: #fff;
+}
+/* line 47, ../sass/screen.scss */
+#top-main ul {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  overflow: hidden;
+  *zoom: 1;
+  float: right;
+}
+/* line 60, ../../../../../RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
+#top-main ul li {
+  list-style-image: none;
+  list-style-type: none;
+  margin-left: 0;
+  white-space: nowrap;
+  display: inline;
+  float: left;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+/* line 48, ../../../../../RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
+#top-main ul li:first-child, #top-main ul li.first {
+  padding-left: 0;
+}
+/* line 49, ../../../../../RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
+#top-main ul li:last-child {
+  padding-right: 0;
+}
+/* line 50, ../../../../../RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
+#top-main ul li.last {
+  padding-right: 0;
+}
+/* line 50, ../sass/screen.scss */
+#top-main ul a {
+  color: #fff;
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: 0.2s;
+  -moz-transition-duration: 0.2s;
+  -o-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+  -webkit-transition-timing-function: ease-in;
+  -moz-transition-timing-function: ease-in;
+  -o-transition-timing-function: ease-in;
+  transition-timing-function: ease-in;
+}
+/* line 31, ../sass/_base.scss */
+#top-main ul a:hover {
+  color: #ffe806;
+}
+
+/* line 56, ../sass/screen.scss */
+#main {
+  position: relative;
+  height: 404px;
+}
+
+/* line 61, ../sass/screen.scss */
+#logo {
+  position: absolute;
+  top: -2.2em;
+  left: 35px;
+  height: 80px;
+  width: 202px;
+}
+/* line 68, ../sass/screen.scss */
+#logo a img {
+  height: 80px;
+  width: 202px;
+  position: relative;
+  z-index: 1000;
+}
+
+/* line 78, ../sass/screen.scss */
+#search, #languages {
+  bottom: 20px;
+  position: absolute;
+}
+
+/* line 84, ../sass/screen.scss */
+#search input[type="text"] {
+  border-color: #5DC600 #fff #5DC600 #5DC600;
+  -moz-border-radius-topleft: 20px;
+  -webkit-border-top-left-radius: 20px;
+  border-top-left-radius: 20px;
+  -moz-border-radius-bottomleft: 20px;
+  -webkit-border-bottom-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-style: solid none solid solid;
+  -webkit-box-shadow: #777777 0 0 4px inset;
+  -moz-box-shadow: #777777 0 0 4px inset;
+  box-shadow: #777777 0 0 4px inset;
+  border-width: 4px medium 4px 4px;
+  font-family: arial;
+  font-size: 0.725em;
+  padding: 5px;
+  position: relative;
+  top: -2px;
+  z-index: 2;
+}
+/* line 97, ../sass/screen.scss */
+#search div {
+  border: 4px solid #5DC600;
+  -webkit-border-radius: 40px;
+  -moz-border-radius: 40px;
+  -ms-border-radius: 40px;
+  -o-border-radius: 40px;
+  border-radius: 40px;
+  display: inline-block;
+  height: 40px;
+  margin-left: -13px;
+  position: relative;
+  width: 40px;
+}
+/* line 106, ../sass/screen.scss */
+#search input[type="submit"] {
+  background: url("../images/loopa.png") no-repeat center center #2061ad;
+  border: none;
+  -webkit-box-shadow: #999999 0 0 5px;
+  -moz-box-shadow: #999999 0 0 5px;
+  box-shadow: #999999 0 0 5px;
+  -webkit-border-radius: 40px;
+  -moz-border-radius: 40px;
+  -ms-border-radius: 40px;
+  -o-border-radius: 40px;
+  border-radius: 40px;
+  cursor: pointer;
+  height: 40px;
+  outline: medium none;
+  position: relative;
+  text-indent: -9999px;
+  width: 40px;
+  z-index: 3;
+}
+
+/* line 123, ../sass/screen.scss */
+#search {
+  left: 35px;
+}
+
+/* line 127, ../sass/screen.scss */
+#languages {
+  right: 35px;
+}
+/* line 129, ../sass/screen.scss */
+#languages a {
+  text-indent: 9999px;
+}
+
+/* line 134, ../sass/screen.scss */
+#cities {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  overflow: hidden;
+  *zoom: 1;
+  background: #2061AD;
+  font-family: "MyriadPro", Arial, sans-serif;
+  font-size: 0.9em;
+  line-height: 2.5em;
+  height: 2.5em;
+  padding: 0 24px 0 16px;
+  margin-left: 7px;
+  color: #fff;
+}
+/* line 60, ../../../../../RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
+#cities li {
+  list-style-image: none;
+  list-style-type: none;
+  margin-left: 0;
+  white-space: nowrap;
+  display: inline;
+  float: left;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+/* line 48, ../../../../../RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
+#cities li:first-child, #cities li.first {
+  padding-left: 0;
+}
+/* line 49, ../../../../../RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
+#cities li:last-child {
+  padding-right: 0;
+}
+/* line 50, ../../../../../RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
+#cities li.last {
+  padding-right: 0;
+}
+/* line 144, ../sass/screen.scss */
+#cities a {
+  color: #fff;
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: 0.2s;
+  -moz-transition-duration: 0.2s;
+  -o-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+  -webkit-transition-timing-function: ease-in;
+  -moz-transition-timing-function: ease-in;
+  -o-transition-timing-function: ease-in;
+  transition-timing-function: ease-in;
+}
+/* line 31, ../sass/_base.scss */
+#cities a:hover {
+  color: #ffe806;
+}
+
+/* line 149, ../sass/screen.scss */
+#container {
+  margin-left: 7px;
+  background: #fff;
+  padding: 3.5em 35px;
+  -webkit-box-shadow: #2061ad 0 7px 10px;
+  -moz-box-shadow: #2061ad 0 7px 10px;
+  box-shadow: #2061ad 0 7px 10px;
+}
+
+/* line 156, ../sass/screen.scss */
+#primary-foot {
+  width: 100%;
+  background: #2061AD;
+  font-family: "MyriadPro", Arial, sans-serif;
+  -webkit-box-shadow: #003985 0 -1px 5px;
+  -moz-box-shadow: #003985 0 -1px 5px;
+  box-shadow: #003985 0 -1px 5px;
+  margin-top: 50px;
+  font-family: "MyriadPro", Arial, sans-serif;
+  color: #9EC7F7;
+}
+/* line 162, ../sass/screen.scss */
+#primary-foot .menu, #primary-foot .cities, #primary-foot #bottom-foot ul {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  overflow: hidden;
+  *zoom: 1;
+}
+/* line 60, ../../../../../RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
+#primary-foot .menu li, #primary-foot .cities li, #primary-foot #bottom-foot ul li {
+  list-style-image: none;
+  list-style-type: none;
+  margin-left: 0;
+  white-space: nowrap;
+  display: inline;
+  float: left;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+/* line 48, ../../../../../RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
+#primary-foot .menu li:first-child, #primary-foot .menu li.first, #primary-foot .cities li:first-child, #primary-foot .cities li.first, #primary-foot #bottom-foot ul li:first-child, #primary-foot #bottom-foot ul li.first {
+  padding-left: 0;
+}
+/* line 49, ../../../../../RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
+#primary-foot .menu li:last-child, #primary-foot .cities li:last-child, #primary-foot #bottom-foot ul li:last-child {
+  padding-right: 0;
+}
+/* line 50, ../../../../../RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
+#primary-foot .menu li.last, #primary-foot .cities li.last, #primary-foot #bottom-foot ul li.last {
+  padding-right: 0;
+}
+/* line 164, ../sass/screen.scss */
+#primary-foot .menu a, #primary-foot .cities a, #primary-foot #bottom-foot ul a {
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: 0.2s;
+  -moz-transition-duration: 0.2s;
+  -o-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+  -webkit-transition-timing-function: ease-in;
+  -moz-transition-timing-function: ease-in;
+  -o-transition-timing-function: ease-in;
+  transition-timing-function: ease-in;
+  color: #9EC7F7;
+  text-transform: uppercase;
+  line-height: 1.7em;
+}
+/* line 169, ../sass/screen.scss */
+#primary-foot .menu a:hover, #primary-foot .cities a:hover, #primary-foot #bottom-foot ul a:hover {
+  color: #fff;
+}
+/* line 174, ../sass/screen.scss */
+#primary-foot .menu {
+  font-size: 1.07em;
+}
+/* line 177, ../sass/screen.scss */
+#primary-foot .cities {
+  font-size: 0.7em;
+}
+
+/* line 181, ../sass/screen.scss */
+#top-foot, #bottom-foot .wrapper {
+  padding: 35px;
+}
+
+/* line 184, ../sass/screen.scss */
+#bottom-foot {
+  border-top: 1px solid #9EC7F7;
+}
+/* line 186, ../sass/screen.scss */
+#bottom-foot .wrapper {
+  width: 902px;
+}
+/* line 188, ../sass/screen.scss */
+#bottom-foot .wrapper ul {
+  float: right;
+}
+/* line 192, ../sass/screen.scss */
+#bottom-foot .social-face, #bottom-foot .social-twitter, #bottom-foot .social-g {
+  width: 29px;
+  height: 30px;
+  display: block;
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: 0.2s;
+  -moz-transition-duration: 0.2s;
+  -o-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+  -webkit-transition-timing-function: ease-in;
+  -moz-transition-timing-function: ease-in;
+  -o-transition-timing-function: ease-in;
+  transition-timing-function: ease-in;
+}
+/* line 197, ../sass/screen.scss */
+#bottom-foot .social-face:hover, #bottom-foot .social-twitter:hover, #bottom-foot .social-g:hover {
+  opacity: 0.8;
+}

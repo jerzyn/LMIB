@@ -7,6 +7,7 @@ body {
 	background-repeat: no-repeat, repeat-x; 
 	font: 16px/24px Arial, sans-serif;
 	color: #000;
+	text-decoration: none;
 }
 
 p {
@@ -49,6 +50,7 @@ a {
 		float: right;
 		a {
 			@include link-trans;
+			text-transform: uppercase;
 		}
 	}
 }
@@ -66,10 +68,11 @@ a {
 		width: 202px;
 		a {
 			img {
-				height: 80px;
-				width: 202px;
+				background: #2061AD;
 				position: relative;
 				z-index: 1000;
+				@include border-bottom-radius(15px);
+				padding: 5px;
 			}
 
 		}
@@ -128,12 +131,18 @@ a {
 		right: $p35;
 		a {
 			text-indent: 9999px;
+			@include trans;
+			opacity: 0.5;
+			&:hover {
+				opacity: 1;
+			}
 		}
 	}
 
 #cities {
 	@include horizontal-list;
-	background: #2061AD;
+	$experimental-support-for-svg: true;
+	@include background-image(linear-gradient(left, #044794, #3574c0, #044794));
 	font-family: "MyriadPro", Arial, sans-serif;
 	font-size: 0.9em;
 	line-height: 2.5em;
@@ -143,6 +152,7 @@ a {
 	color: #fff;
 	a {
 		@include link-trans;
+		text-transform: uppercase;
 	}
 }
 
@@ -151,6 +161,7 @@ a {
 	background: #fff;
 	padding: 3.5em $p35;
 	@include box-shadow(#2061AD 0 7px 10px);
+	@include border-bottom-radius(5px);
 }
 
 #primary-foot {

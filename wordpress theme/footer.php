@@ -32,7 +32,7 @@
 		</div>
 		<section id="bottom-foot">
 			<div class="wrapper">
-				<img class="logo-small" src="<?php echo get_template_directory_uri(); ?>/images/LMIB_FOOTER_logo.png" alt="Lets meet in Brazil small" />
+				<a href="/"><img class="logo-small" src="<?php echo get_template_directory_uri(); ?>/images/LMIB_FOOTER_logo.png" alt="Lets meet in Brazil small" /></a>
 				<ul>
 					<li><a class="social-face" href="#"><!--<img src="images/LMIB_FOOTER_socia-icons_face.png" alt="Facebook" />--></a></li>
 					<li><a class="social-twitter" href="#"></a></li>
