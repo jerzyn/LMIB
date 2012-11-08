@@ -1,37 +1,201 @@
 @import "base";
 
 body {
-	background: #4E70A6 url($path + '/images/LMIB_bg.jpg') repeat top center;
+	background-color: #C0D0E7;
+	background-image: url($path + '/images/LMIB_BANER.png'), url($path + '/images/LMIB_bg.jpg');
+	background-position: center top, center top;
+	background-repeat: no-repeat, repeat-x; 
 	font: 16px/24px Arial, sans-serif;
 	color: #000;
 }
 
+p {
+	font-size:1em;
+	margin-top: 1.5em;
+	margin-bottom: 1.5em;
+}
+
+h1 {
+	font-size:1.5em;
+	line-height: 1em;
+	margin-top: 0;
+	margin-bottom: 1em;
+}
+
+h2 {
+	font-size:1.1667em;
+	line-height: 1.286em;
+	margin-top: 1.286em;
+	margin-bottom: 1.286em; 
+}
+
+a {
+	text-decoration: none;
+}
+
 .wrapper {
-	width: 1024px;
+	width: 972px;
 	margin: 0 auto;
 }
 
 #top-main {
-	width: 100%;
-	background: #074A97;
+	@include fullbar;
 	height: 2em;
-	font-family: "MyriadPro", Arial, sans-serif;
+	font-size: 1.25em;
+	line-height: 2em;
+	color: #fff;
 	ul {
 		@include horizontal-list;
 		float: right;
 		a {
-			color: #fff;
-			@include transition-property(all);
-			@include transition-duration(0.5s);
-			@include transition-timing-function(ease-in);
-			&:hover {
-				color: #ffe806;
-			}
+			@include link-trans;
 		}
 	}
 }
 
 #main {
 	position: relative;
-	background: url($path + '/images/LMIB_BANER.png') no-repeat;
+	height: 404px;
+}
+
+	#logo {
+		position: absolute;
+		top: -2.2em;
+		left: $p35;
+		height: 80px;
+		width: 202px;
+		a {
+			img {
+				height: 80px;
+				width: 202px;
+				position: relative;
+				z-index: 1000;
+			}
+
+		}
+	}
+
+	#search, #languages {
+		bottom: 20px;
+	    position: absolute;
+	}
+
+	#search {
+		input[type="text"] {
+		    border-color: #5DC600 #fff #5DC600 #5DC600;
+		    @include border-left-radius(20px);
+		    border-style: solid none solid solid;
+		    @include box-shadow(#777 0 0 4px inset);
+		    border-width: 4px medium 4px 4px;
+		    font-family: arial;
+		    font-size: 0.725em;
+		    padding: 5px;
+		    position: relative;
+		    top: -2px;
+		    z-index: 2;
+		}
+		div {
+			border: 4px solid #5DC600;
+		    @include border-radius(40px);
+		    display: inline-block;
+		    height: 40px;
+		    margin-left: -13px;
+		    position: relative;
+		    width: 40px;
+		}
+		input[type="submit"] {
+			background: url("../images/loopa.png") no-repeat center center #2061AD;
+		    border: none;
+		    @include box-shadow(#999 0 0 5px);
+		    @include border-radius(40px);
+		    cursor: pointer;
+		    height: 40px;
+		    outline: medium none;
+		    position: relative;
+		    text-indent: -9999px;
+		    width: 40px;
+		    z-index: 3;
+		}
+	}
+
+
+
+	#search {
+		left: $p35;
+	}
+
+	#languages {
+		right: $p35;
+		a {
+			text-indent: 9999px;
+		}
+	}
+
+#cities {
+	@include horizontal-list;
+	background: #2061AD;
+	font-family: "MyriadPro", Arial, sans-serif;
+	font-size: 0.9em;
+	line-height: 2.5em;
+	height: 2.5em;
+	padding: 0 24px 0 16px;
+	margin-left: 7px;
+	color: #fff;
+	a {
+		@include link-trans;
+	}
+}
+
+#container {
+	margin-left: 7px;
+	background: #fff;
+	padding: 3.5em $p35;
+	@include box-shadow(#2061AD 0 7px 10px);
+}
+
+#primary-foot {
+	@include fullbar;
+	@include box-shadow((#2061AD - 40) 0 -1px 5px);
+	margin-top: 50px;
+	font-family: "MyriadPro", Arial, sans-serif;
+	color: #9EC7F7;
+	.menu, .cities, #bottom-foot ul {
+		@include horizontal-list;
+		a {
+			@include trans;
+			color: #9EC7F7;
+			text-transform: uppercase;
+			line-height: 1.7em;
+			&:hover {
+				color: #fff;
+			}
+		}
+	}
+	.menu {
+		font-size: 1.07em;
+	}
+	.cities {
+		font-size: 0.7em; 
+	}
+}
+#top-foot, #bottom-foot .wrapper {
+	padding: $p35;
+}
+#bottom-foot {
+	border-top: 1px solid #9EC7F7;
+	.wrapper {
+		width: 972px - 70;
+		ul {
+			float: right;
+		}
+	}
+	.social-face, .social-twitter, .social-g {
+		width: 29px;
+		height: 30px;
+		display: block;
+		@include trans;
+		&:hover {
+			opacity: 0.8;
+		}
+	}
 }
